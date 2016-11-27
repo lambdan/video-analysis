@@ -6,15 +6,19 @@ Converts a video into keyframe interval=1, then splits it into 1 second chunks a
 
 The bitrate number isn't really what you wanna look at, but I use it to see which parts of a video are more bitrate intensive than others (the graph is the most interesting).
 
-https://www.youtube.com/watch?v=4HK5954eDFk
+![graph](http://i.imgur.com/VfgUR1p.png)
 
-(Please note that the keyframe int=1 transcode I do uses preset ultrafast and crf0, this means it creates a lossless version of your original video, however at probably much, much higher bitrates. This works for my purposes as I wanna see which parts of a video are more intensive, but it should not be used to determine at what bitrate your capture card can capture.)
+https://www.youtube.com/watch?v=bbVQJT0wWdw&feature=youtu.be
+
+(Please note that the keyframe int=1 transcode I do uses preset ultrafast and crf0, this means it creates a lossless version of your original video, however at probably much, much higher bitrates. This works for my purposes as I wanna see which parts of a video are more intensive (and I need keyframe int=1), but it should not be used to determine at what bitrate your capture card can capture.)
 
 # framerate.py
 
-Splits a video into 1 second chunks and then takes 60 screenshots (frames) of that second and tries to determine how many unique screenshots (frames) there are, to get framerate per second. Then plots it out on a graph and also creates a video with fps overlay.
+Takes a video and then takes 60 screenshots (frames) per second of that video and tries to determine how many unique screenshots (frames) there are, to get the framerate per second. Then plots it out on a graph and also creates a video with fps overlay.
 
-https://www.youtube.com/watch?v=CTD1Ja4hMlI
+- Goldeneye (N64): https://youtu.be/uKRunmUQ-aM
+- Modern Warfare Remastered (PS4): https://youtu.be/4AczaVGaJHE
+- Destiny (PS4): https://youtu.be/xEsb46nW8nU
 
 Trying to figure out what framerate a video is much easier if you have a very, very high quality digital/lossless recording. An analog/compressed recording is much harder to analyze.
 
