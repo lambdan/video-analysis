@@ -88,9 +88,15 @@ ENV/
 # Rope project settings
 .ropeproject
 
-.mp4
-.tmp
-.mkv
-.avi
-.png
-.jpg
+*.mp4
+*.tmp
+*.mkv
+*.avi
+*.png
+*.jpg
+*.bmp
+*.subtitle
+*.txt
+*.srt
+*.dat
+old_equal.py
